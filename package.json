@@ -1,0 +1,12 @@
+{
+  "name": "hi-fi-rush-clone",
+  "version": "1.0.0",
+  "description": "Clone site for Hi-Fi Rush",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Alex Curran",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.47.0"
+  }
+}
