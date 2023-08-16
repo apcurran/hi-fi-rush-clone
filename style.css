@@ -11,3 +11,9 @@
     --theme-color-xbox: #0e7a0d;
     --theme-color-pc: #00a2ed;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/HFR-bleed.webp");
+}
