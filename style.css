@@ -71,15 +71,16 @@ button {
         display: flex;
         gap: 1.5rem;
     }
-
+    
     & button {
         font-size: 1.25rem;
         padding-block: 1rem;
         padding-inline: 3rem;
         transform: skewX(-10deg);
-    }
 
-    & span {
-        transform: skewX(10deg);
+        & span {
+            display: block;
+            transform: skewX(10deg);
+        }
     }
 }
