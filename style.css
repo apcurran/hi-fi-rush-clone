@@ -27,6 +27,15 @@ picture {
     display: block;
 }
 
+picture img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
 .page-wrapper {
     max-width: 80rem;
     margin-inline: auto;
@@ -34,6 +43,43 @@ picture {
     box-shadow: 0 0 12px 20px hsl(0, 0%, 0%, .2);
 }
 
-.hero-header {
-    
+.header-hero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    & .hero-bg {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+    }
+
+    & .logo {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        width: 30rem;
+        padding-inline-end: 2rem;
+    }
+
+    & .logo-group {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        align-self: self-end;
+        justify-self: center;
+        padding-block-end: 2rem;
+        z-index: 1;
+
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    & button {
+        font-size: 1.25rem;
+        padding-block: 1rem;
+        padding-inline: 3rem;
+        transform: skewX(-10deg);
+    }
+
+    & span {
+        transform: skewX(10deg);
+    }
 }
