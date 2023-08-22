@@ -12,8 +12,28 @@
     --theme-color-pc: #00a2ed;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-image: url("./images/HFR-bleed.webp");
+}
+
+img,
+picture {
+    display: block;
+}
+
+.page-wrapper {
+    max-width: 80rem;
+    margin-inline: auto;
+    background-color: var(--theme-color-cyan);
+    box-shadow: 0 0 12px 20px hsl(0, 0%, 0%, .2);
+}
+
+.hero-header {
+    
 }
