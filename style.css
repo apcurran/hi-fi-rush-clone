@@ -70,13 +70,13 @@ button {
         grid-row: 2 / 3;
         align-self: self-end;
         justify-self: center;
-        padding-block-end: 2rem;
+        padding-block-end: 1.5rem;
         z-index: 1;
 
         /* this container is also a grid parent */
         display: grid;
         justify-items: center;
-        gap: 1rem;
+        gap: 2.25rem;
     }
 
     & .logo-group {
