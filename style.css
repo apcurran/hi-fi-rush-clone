@@ -57,7 +57,12 @@ button {
         grid-column: 4 / 5;
         grid-row: 1 / 2;
         width: 30rem;
-        padding-inline-end: 2rem;
+        padding-inline-end: 1rem;
+        padding-block-start: 1rem;
+
+        & img {
+            filter: drop-shadow(8px 8px 0 rgba(0,0,0,.85));
+        }
     }
 
     & .cta-group {
