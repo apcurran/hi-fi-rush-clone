@@ -36,6 +36,17 @@ button {
     cursor: pointer;
 }
 
+/* visually hide, only show for screen reader assistive tech */
+.screen-reader-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
 .page-wrapper {
     max-width: 80rem;
     margin-inline: auto;
@@ -61,7 +72,7 @@ button {
         padding-block-start: 1rem;
 
         & img {
-            filter: drop-shadow(8px 8px 0 rgba(0,0,0,.85));
+            filter: drop-shadow(8px 8px 0 rgba(0, 0, 0, .85));
         }
     }
 
@@ -83,7 +94,7 @@ button {
         display: flex;
         gap: 1.5rem;
     }
-    
+
     & button {
         font-size: 1.25rem;
         padding-block: 1rem;
