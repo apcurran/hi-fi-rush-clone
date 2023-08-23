@@ -93,6 +93,8 @@ button {
         & span {
             display: block;
             transform: skewX(10deg);
+            text-transform: uppercase;
+            letter-spacing: .1em;
         }
     }
 
