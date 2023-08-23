@@ -60,7 +60,7 @@ button {
         padding-inline-end: 2rem;
     }
 
-    & .logo-group {
+    & .cta-group {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
         align-self: self-end;
@@ -68,6 +68,13 @@ button {
         padding-block-end: 2rem;
         z-index: 1;
 
+        /* this container is also a grid parent */
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    & .logo-group {
         display: flex;
         gap: 1.5rem;
     }
@@ -81,6 +88,20 @@ button {
         & span {
             display: block;
             transform: skewX(10deg);
+        }
+    }
+
+    & .arrow-container {
+        background-color: var(--theme-color-yellow);
+        aspect-ratio: 1 / 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        & svg {
+            fill: var(--theme-color-blue);
         }
     }
 }
