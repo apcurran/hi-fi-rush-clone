@@ -39,6 +39,7 @@ picture img {
 
 button {
     cursor: pointer;
+    border: none;
 }
 
 /* visually hide, only show for screen reader assistive tech */
@@ -125,6 +126,36 @@ button {
 
         & svg {
             fill: var(--theme-color-blue);
+        }
+    }
+}
+
+.chai-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "text  img"
+        "video video";
+
+    & .text-group {
+        grid-area: text;
+    }
+
+    & .img-group {
+        grid-area: img;
+    }
+    
+    & .chai-section-cta-button {
+        padding: 0;
+    }
+
+    & .video-group {
+        grid-area: video;
+        justify-self: center;
+
+        & picture {
+            border: 8px solid var(--theme-color-yellow);
+            max-inline-size: 50rem;
         }
     }
 }
