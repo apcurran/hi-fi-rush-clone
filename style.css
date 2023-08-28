@@ -143,6 +143,11 @@ button {
 
     & .img-group {
         grid-area: img;
+        grid-row: 1 / -1;
+
+        & picture {
+            rotate: -24deg;
+        }
     }
     
     & .chai-section-cta-button {
@@ -152,6 +157,7 @@ button {
     & .video-group {
         grid-area: video;
         justify-self: center;
+        z-index: 1;
 
         & picture {
             border: 8px solid var(--theme-color-yellow);
