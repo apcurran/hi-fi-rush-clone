@@ -1,4 +1,5 @@
 :root {
+    --theme-color-white: #fff;
     --theme-color-blue: #004aba;
     --theme-color-red: red;
     --theme-color-purple: #6b36bc;
@@ -68,6 +69,8 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    padding-block-end: 12rem;
+    background-color: var(--theme-color-blue);
 
     & .hero-bg {
         grid-column: 1 / -1;
@@ -140,6 +143,8 @@ p {
     grid-template-areas:
         "text  img"
         "video video";
+    background-color: var(--theme-color-blue);
+    color: var(--theme-color-white);
 
     & .text-group {
         grid-area: text;
