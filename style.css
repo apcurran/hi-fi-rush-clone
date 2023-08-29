@@ -11,6 +11,8 @@
     --theme-color-orange: #ff2500;
     --theme-color-xbox: #0e7a0d;
     --theme-color-pc: #00a2ed;
+
+    --sections-side-padding: 2.5rem;
 }
 
 * {
@@ -135,6 +137,17 @@ p {
             fill: var(--theme-color-blue);
         }
     }
+}
+
+.chai-section,
+.peppermint-section,
+.enemies-section {
+    padding-inline: var(--sections-side-padding);
+}
+
+.peppermint-section,
+.enemies-section {
+    gap: var(--sections-side-padding);
 }
 
 .chai-section {
