@@ -189,3 +189,21 @@ p {
         }
     }
 }
+
+.peppermint-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "img text";
+    
+    background-color: var(--theme-color-purple);
+    color: var(--theme-color-white);
+
+    & .text-group {
+        grid-area: text;
+    }
+
+    & .img-group {
+        grid-area: img;
+    }
+}
