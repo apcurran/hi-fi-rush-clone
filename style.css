@@ -30,6 +30,10 @@ body {
     background-image: url("./images/HFR-bleed.webp");
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
 img,
 picture {
     display: block;
