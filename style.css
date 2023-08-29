@@ -207,3 +207,25 @@ p {
         grid-area: img;
     }
 }
+
+.enemies-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "text img";
+    
+    background-color: var(--theme-color-purple);
+    color: var(--theme-color-white);
+
+    & .text-group {
+        grid-area: text;
+    }
+
+    & .img-group {
+        grid-area: img;
+    }
+}
+
+.news-section {
+    background-color: var(--theme-color-magenta);
+}
