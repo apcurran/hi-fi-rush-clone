@@ -228,4 +228,11 @@ p {
 
 .news-section {
     background-color: var(--theme-color-magenta);
+
+    & picture {
+        inline-size: auto;
+        block-size: 185px;
+    }
+
+    
 }
