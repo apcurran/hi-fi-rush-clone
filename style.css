@@ -30,6 +30,12 @@ body {
     background-image: url("./images/HFR-bleed.webp");
 }
 
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
 h2 {
     text-transform: uppercase;
 }
@@ -50,6 +56,7 @@ button {
 }
 
 p {
+    margin: 0;
     line-height: 1.5;
 }
 
@@ -226,12 +233,41 @@ p {
     }
 }
 
+.news-section-wrapper {
+    max-inline-size: 80%;
+    margin-inline: auto;
+}
+
 .news-section {
+    padding-block: 6rem;
     background-color: var(--theme-color-magenta);
 
-    .cards-container {
+    & h2 {
+        text-align: center;
+    }
+
+    & .cards-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+
+        & article {
+            border: 2px solid #000;
+            background-color: var(--theme-color-gold);
+        }
+        
+        & .card-info {
+            padding-inline: 1rem;
+            padding-block: 1rem;
+
+            & h3 {
+                margin-block-end: 1rem;
+            }
+        }
+
+        & img {
+            block-size: 14rem;
+            object-fit: cover;
+        }
     }
 }
