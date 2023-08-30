@@ -229,10 +229,9 @@ p {
 .news-section {
     background-color: var(--theme-color-magenta);
 
-    & picture {
-        inline-size: auto;
-        block-size: 185px;
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
-
-    
 }
