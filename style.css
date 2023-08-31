@@ -260,6 +260,11 @@ p {
             padding-inline: 1rem;
             padding-block: 1rem;
 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 3rem;
+
             & h3 {
                 margin-block-end: 1rem;
             }
