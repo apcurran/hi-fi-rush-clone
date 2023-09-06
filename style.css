@@ -278,3 +278,26 @@ p {
         }
     }
 }
+
+.purchase-section {
+    padding-block: 5rem;
+}
+
+.game-edition-card {
+    display: grid;
+    grid-template-areas:
+        "cover-img content"
+        ".         content";
+    padding-inline: 1.5rem;
+    background-color: var(--theme-color-gold);
+
+    .img-container {
+        grid-area: cover-img;
+    }
+
+    .game-edition-content {
+        grid-area: content;
+        padding-block: 2rem;
+        padding-inline: 3rem;
+    }
+}
