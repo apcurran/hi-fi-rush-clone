@@ -291,7 +291,9 @@ p {
         ".         edition-content";
     grid-template-rows: auto;
     margin-inline: 3rem;
+    margin-block-end: 3rem;
     padding-inline: 1.5rem;
+    row-gap: 2rem;
     background-color: var(--theme-color-gold);
 
     & h2 {
