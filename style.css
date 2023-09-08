@@ -293,6 +293,7 @@ p {
     margin-inline: 3rem;
     margin-block-end: 3rem;
     padding-inline: 1.5rem;
+    padding-block: 2rem;
     row-gap: 2rem;
     background-color: var(--theme-color-gold);
 
