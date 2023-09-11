@@ -310,4 +310,26 @@ p {
         padding-block: 2rem;
         padding-inline: 3rem;
     }
+
+    & .buttons-grid {
+        display: grid;
+        grid-template-areas:
+            "xbox   windows"
+            "steam  epic";
+
+        &:nth-child(1) {
+            grid-area: "xbox";
+        }
+        &:nth-child(2) {
+            grid-area: "windows";
+        }
+        &:nth-child(3) {
+            grid-area: "steam";
+        }
+        &:nth-child(4) {
+            grid-area: "epic";
+        }
+    }
+
+
 }
