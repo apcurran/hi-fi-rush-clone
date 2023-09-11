@@ -311,11 +311,20 @@ p {
         padding-inline: 3rem;
     }
 
+    & .button-mini-grid {
+        display: grid;
+        grid-template-areas:
+            "buy-button .";
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
     & .buttons-grid {
         display: grid;
         grid-template-areas:
             "xbox   windows"
             "steam  epic";
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem 3rem;
 
         &:nth-child(1) {
@@ -331,10 +340,9 @@ p {
             grid-area: "epic";
         }
 
-        & .fancy-button {
-            width: 100%;
-        }
     }
-
-
+    
+    & .fancy-button {
+        width: 100%;
+    }
 }
