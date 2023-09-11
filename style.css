@@ -78,6 +78,20 @@ p {
     box-shadow: 0 0 12px 20px hsl(0, 0%, 0%, .2);
 }
 
+.fancy-button {
+    font-size: 1.25rem;
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    transform: skewX(-10deg);
+
+    & span {
+        display: block;
+        transform: skewX(10deg);
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+}
+
 .header-hero {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -119,20 +133,6 @@ p {
     & .logo-group {
         display: flex;
         gap: 1.5rem;
-    }
-
-    & button {
-        font-size: 1.25rem;
-        padding-block: 1rem;
-        padding-inline: 3rem;
-        transform: skewX(-10deg);
-
-        & span {
-            display: block;
-            transform: skewX(10deg);
-            text-transform: uppercase;
-            letter-spacing: .1em;
-        }
     }
 
     & .arrow-container {
@@ -316,6 +316,7 @@ p {
         grid-template-areas:
             "xbox   windows"
             "steam  epic";
+        gap: 1.5rem 3rem;
 
         &:nth-child(1) {
             grid-area: "xbox";
@@ -328,6 +329,10 @@ p {
         }
         &:nth-child(4) {
             grid-area: "epic";
+        }
+
+        & .fancy-button {
+            width: 100%;
         }
     }
 
