@@ -36,10 +36,10 @@ h2,
 h3 {
     margin: 0;
     font-family: 'Black Han Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 h2 {
-    text-transform: uppercase;
     text-shadow: 4px 4px 0 #000;
     font-size: 3rem;
     color: var(--theme-color-white);
