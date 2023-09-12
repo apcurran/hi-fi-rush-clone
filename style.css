@@ -38,6 +38,9 @@ h3 {
 
 h2 {
     text-transform: uppercase;
+    text-shadow: 4px 4px 0 #000;
+    font-size: 3rem;
+    color: var(--theme-color-white);
 }
 
 img,
@@ -179,7 +182,7 @@ p {
         grid-row: 1 / -1;
         rotate: -24deg;
     }
-    
+
     & .chai-section-cta-button {
         padding: 0;
     }
@@ -202,7 +205,7 @@ p {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
         "img text";
-    
+
     background-color: var(--theme-color-purple);
     color: var(--theme-color-white);
 
@@ -220,7 +223,7 @@ p {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
         "text img";
-    
+
     background-color: var(--theme-color-purple);
     color: var(--theme-color-white);
 
@@ -258,7 +261,7 @@ p {
             border: 2px solid #000;
             background-color: var(--theme-color-gold);
         }
-        
+
         & .card-info {
             padding-inline: 1.25rem;
             padding-block: 1.25rem;
@@ -330,18 +333,21 @@ p {
         &:nth-child(1) {
             grid-area: "xbox";
         }
+
         &:nth-child(2) {
             grid-area: "windows";
         }
+
         &:nth-child(3) {
             grid-area: "steam";
         }
+
         &:nth-child(4) {
             grid-area: "epic";
         }
 
     }
-    
+
     & .fancy-button {
         width: 100%;
     }
