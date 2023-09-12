@@ -11,6 +11,7 @@
     --theme-color-orange: #ff2500;
     --theme-color-xbox: #0e7a0d;
     --theme-color-pc: #00a2ed;
+    --theme-color-nearly-black: rgb(0 0 0 / 90%);
 
     --sections-side-padding: 2.5rem;
 }
@@ -54,9 +55,12 @@ picture img {
     block-size: auto;
 }
 
+/* base button styling */
 button {
     cursor: pointer;
-    border: none;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    font-weight: 700;
 }
 
 p {
@@ -300,6 +304,7 @@ p {
     padding-block: 2rem;
     row-gap: 2rem;
     background-color: var(--theme-color-gold);
+    border: 2px solid #000;
 
     & h2 {
         font-size: 2.75rem;
@@ -351,5 +356,7 @@ p {
 
     & .fancy-button {
         width: 100%;
+        background-color: var(--theme-color-pc);
+        color: var(--theme-color-white);
     }
 }
