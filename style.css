@@ -40,7 +40,12 @@ h3 {
 }
 
 h2 {
-    text-shadow: 4px 4px 0 #000;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    filter: drop-shadow(4px 4px 0 var(--theme-color-nearly-black));
     font-size: 3rem;
     color: var(--theme-color-white);
 }
@@ -58,7 +63,7 @@ picture img {
 /* base button styling */
 button {
     cursor: pointer;
-    border: 3px solid #000;
+    border: 2px solid #000;
     box-shadow: 4px 4px 0 #000;
     font-weight: 700;
 }
