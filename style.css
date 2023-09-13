@@ -78,6 +78,11 @@ button {
     color: #000;
 }
 
+.button--blue {
+    background-color: var(--theme-color-blue);
+    color: var(--theme-color-white);
+}
+
 p {
     margin: 0;
     line-height: 1.6;
