@@ -315,6 +315,11 @@ p {
 
 .purchase-section {
     padding-block: 5rem;
+
+    & .purchase-section-header {
+        text-align: center;
+        margin-block-end: 3rem;
+    }
 }
 
 .game-edition-card {
