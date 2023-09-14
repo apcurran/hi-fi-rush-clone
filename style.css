@@ -336,6 +336,7 @@ p {
     row-gap: 2rem;
     background-color: var(--theme-color-gold);
     border: 2px solid #000;
+    box-shadow: 6px 6px 0 var(--theme-color-nearly-black);
 
     & h2 {
         font-size: 2.75rem;
