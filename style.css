@@ -88,6 +88,10 @@ p {
     line-height: 1.6;
 }
 
+.tilted {
+    rotate: -2deg;
+}
+
 /* visually hide, only show for screen reader assistive tech */
 .screen-reader-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
