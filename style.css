@@ -351,12 +351,22 @@ p {
         padding-inline: 3rem;
     }
 
+    & .game-edition-content h2 {
+        margin-block-end: 1rem;
+    }
+
+    & .game-edition-content ul,
+    & .standard-edition-description {
+        margin-block-end: 2rem;
+    }
+
     & .button-mini-grid {
         display: grid;
         grid-template-areas:
             "buy-button .";
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
+        margin-block-end: 2rem;
     }
 
     & .buttons-grid {
