@@ -346,6 +346,10 @@ p {
         grid-area: cover-img;
     }
 
+    & img {
+        filter: drop-shadow(4px 4px 0 var(--theme-color-nearly-black));
+    }
+
     & .game-edition-content {
         grid-area: edition-content;
         padding-block: 2rem;
