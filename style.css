@@ -14,6 +14,7 @@
     --theme-color-nearly-black: rgb(0 0 0 / 90%);
 
     --sections-side-padding: 2.5rem;
+    --character-sections-vertical-spacing: 10rem;
 }
 
 * {
@@ -192,6 +193,11 @@ p {
 .peppermint-section,
 .enemies-section {
     padding-inline: var(--sections-side-padding);
+    padding-block-end: var(--character-sections-vertical-spacing);
+}
+
+.peppermint-section {
+    padding-block-start: var(--character-sections-vertical-spacing);
 }
 
 .peppermint-section,
