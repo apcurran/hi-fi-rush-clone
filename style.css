@@ -134,6 +134,11 @@ p {
     & .hero-bg {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
+
+        & img {
+            -webkit-mask-image: linear-gradient(180deg,#000 90%,transparent);
+            mask-image: linear-gradient(180deg,#000 90%,transparent);
+        }
     }
 
     & .logo {
