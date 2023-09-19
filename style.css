@@ -349,7 +349,7 @@ p {
     margin-block-end: 3rem;
     padding-inline: 1.5rem;
     padding-block: 2rem;
-    row-gap: 2rem;
+    row-gap: 3rem;
     background-color: var(--theme-color-gold);
     border: 2px solid #000;
     box-shadow: 6px 6px 0 var(--theme-color-nearly-black);
