@@ -284,7 +284,6 @@ p {
 
 .news-section {
     padding-block: 6rem;
-    background-color: var(--theme-color-magenta);
 
     & h2 {
         margin-block-end: 2rem;
