@@ -107,7 +107,7 @@ p {
 .page-wrapper {
     max-width: 80rem;
     margin-inline: auto;
-    background-color: var(--theme-color-cyan);
+    background-color: #fff;
     box-shadow: 0 0 12px 20px hsl(0, 0%, 0%, .2);
 }
 
@@ -211,7 +211,6 @@ p {
     grid-template-areas:
         "text  img"
         "video video";
-    background-color: var(--theme-color-blue);
     color: var(--theme-color-white);
 
     & .text-group {
@@ -247,7 +246,6 @@ p {
     grid-template-areas:
         "img text";
 
-    background-color: var(--theme-color-purple);
     color: var(--theme-color-white);
 
     & .text-group {
@@ -265,7 +263,6 @@ p {
     grid-template-areas:
         "text img";
 
-    background-color: var(--theme-color-purple);
     color: var(--theme-color-white);
 
     & .text-group {
@@ -331,6 +328,7 @@ p {
 
 .purchase-section {
     padding-block: 5rem;
+    background-color: var(--theme-color-cyan);
 
     & .purchase-section-header {
         text-align: center;
