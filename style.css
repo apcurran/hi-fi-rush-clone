@@ -328,6 +328,10 @@ p {
 .purchase-section {
     padding-block: 5rem;
     background-color: var(--theme-color-cyan);
+    background-image: url("./images/purchase-bg.avif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 
     & .purchase-section-header {
         text-align: center;
