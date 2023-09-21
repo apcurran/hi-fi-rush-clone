@@ -427,3 +427,24 @@ p {
         color: var(--theme-color-white);
     }
 }
+
+/* Scroll Timeline Animation */
+@keyframes color-fade {
+    0% {
+        background-color: var(--theme-color-blue);
+    }
+
+    50% {
+        background-color: var(--theme-color-purple);
+    }
+
+    100% {
+        background-color: var(--theme-color-magenta);
+    }
+}
+
+.scroll-timeline-wrapper {
+    animation: color-fade linear;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+}

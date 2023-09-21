@@ -226,33 +226,6 @@
             </section>
         </main>
     </div>
-    <script>
-        "use strict";
-
-        const gameSectionsWrapper = document.querySelector(".scroll-timeline-wrapper");
-        const myTimeline = new ScrollTimeline({
-            source: document.documentElement,
-            axis: "block"
-        });
-        // colors
-        const HTML = document.documentElement;
-        const color1 = window.getComputedStyle(HTML).getPropertyValue("--theme-color-blue");
-        const color2 = window.getComputedStyle(HTML).getPropertyValue("--theme-color-purple");
-        const color3 = window.getComputedStyle(HTML).getPropertyValue("--theme-color-magenta");
-
-        gameSectionsWrapper.animate(
-            [
-                { backgroundColor: color1 },
-                { backgroundColor: color2 },
-                { backgroundColor: color3 },
-            ],
-            {
-                timeline: myTimeline,
-                rangeStart: "entry 0%",
-                rangeEnd: "exit 85%",
-            }
-        );
-    </script>
 </body>
 
 </html>
