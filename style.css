@@ -438,6 +438,10 @@ p {
         background-color: var(--theme-color-purple);
     }
 
+    80% {
+        background-color: var(--theme-color-magenta);
+    }
+
     100% {
         background-color: var(--theme-color-magenta);
     }
@@ -446,5 +450,4 @@ p {
 .scroll-timeline-wrapper {
     animation: color-fade linear;
     animation-timeline: view();
-    animation-range: entry 0% exit 100%;
 }
