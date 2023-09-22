@@ -87,6 +87,7 @@ button {
 p {
     margin: 0;
     line-height: 1.6;
+    font-size: 1.125rem;
 }
 
 .tilted {
@@ -194,6 +195,10 @@ p {
 .enemies-section {
     padding-inline: var(--sections-side-padding);
     padding-block-end: var(--character-sections-vertical-spacing);
+
+    & h2 {
+        margin-block-end: 1.5rem;
+    }
 }
 
 .peppermint-section {
