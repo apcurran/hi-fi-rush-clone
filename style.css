@@ -15,6 +15,7 @@
 
     --sections-side-padding: 2.5rem;
     --character-sections-vertical-spacing: 10rem;
+    --section-heading-margin: 3.5rem;
 }
 
 * {
@@ -291,7 +292,7 @@ p {
     padding-block: 6rem;
 
     & h2 {
-        margin-block-end: 2rem;
+        margin-block-end: var(--section-heading-margin);
         text-align: center;
     }
 
@@ -340,7 +341,7 @@ p {
 
     & .purchase-section-header {
         text-align: center;
-        margin-block-end: 3rem;
+        margin-block-end: var(--section-heading-margin);
     }
 }
 
