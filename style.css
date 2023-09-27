@@ -13,7 +13,7 @@
     --theme-color-pc: #00a2ed;
     --theme-color-nearly-black: rgb(0 0 0 / 90%);
 
-    --sections-side-padding: 2.5rem;
+    --sections-side-padding: .25rem;
     --character-sections-vertical-spacing: 10rem;
     --section-heading-margin: 3.5rem;
 }
@@ -208,7 +208,9 @@ p {
 
 .peppermint-section,
 .enemies-section {
+    display: grid;
     gap: var(--sections-side-padding);
+    padding-inline: 2.5rem;
 }
 
 .chai-section {
@@ -247,8 +249,7 @@ p {
 }
 
 .peppermint-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.3fr 1fr;
     grid-template-areas:
         "img text";
 
@@ -261,11 +262,14 @@ p {
     & .img-group {
         grid-area: img;
     }
+
+    & .popout--left {
+        margin-inline-start: -5.5rem;
+    }
 }
 
 .enemies-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1.3fr;
     grid-template-areas:
         "text img";
 
@@ -277,6 +281,10 @@ p {
 
     & .img-group {
         grid-area: img;
+    }
+
+    & .popout--right {
+        margin-inline-start: 5.5rem;
     }
 }
 
