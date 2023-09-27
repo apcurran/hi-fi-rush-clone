@@ -13,7 +13,7 @@
     --theme-color-pc: #00a2ed;
     --theme-color-nearly-black: rgb(0 0 0 / 90%);
 
-    --sections-side-padding: .25rem;
+    --sections-side-padding: 2.5rem;
     --character-sections-vertical-spacing: 10rem;
     --section-heading-margin: 3.5rem;
 }
@@ -210,7 +210,6 @@ p {
 .enemies-section {
     display: grid;
     gap: var(--sections-side-padding);
-    padding-inline: 2.5rem;
 }
 
 .chai-section {
