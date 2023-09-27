@@ -209,7 +209,6 @@ p {
 .peppermint-section,
 .enemies-section {
     display: grid;
-    gap: var(--sections-side-padding);
 }
 
 .chai-section {
