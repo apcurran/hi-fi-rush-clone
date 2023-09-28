@@ -14,6 +14,7 @@
     --theme-color-pc: #00a2ed;
     --theme-color-pc--light: #1ab6ff;
     --theme-color-nearly-black: rgb(0 0 0 / 90%);
+    --theme-color-black: #000;
 
     --sections-side-padding: 2.5rem;
     --character-sections-vertical-spacing: 10rem;
@@ -82,9 +83,20 @@ button {
     color: #000;
 }
 
+.button--red:hover,
+.button--yellow:hover {
+    background-color: var(--theme-color-blue);
+    color: var(--theme-color-white);
+}
+
 .button--blue {
     background-color: var(--theme-color-blue);
     color: var(--theme-color-white);
+
+    &:hover {
+        background-color: var(--theme-color-yellow);
+        color: var(--theme-color-black);
+    }
 }
 
 p {
