@@ -9,8 +9,10 @@
     --theme-color-salmon: #ff316b;
     --theme-color-gold: #fc4;
     --theme-color-orange: #ff2500;
-    --theme-color-xbox: #0e7a0d;
+    --theme-color-game-pass: #0e7a0d;
+    --theme-color-game-pass--light: #13a111;
     --theme-color-pc: #00a2ed;
+    --theme-color-pc--light: #1ab6ff;
     --theme-color-nearly-black: rgb(0 0 0 / 90%);
 
     --sections-side-padding: 2.5rem;
@@ -442,6 +444,18 @@ p {
         width: 100%;
         background-color: var(--theme-color-pc);
         color: var(--theme-color-white);
+
+        &:hover {
+            background-color: var(--theme-color-pc--light);
+        }
+    }
+
+    & .fancy-button--game-pass {
+        background-color: var(--theme-color-game-pass);
+
+        &:hover {
+            background-color: var(--theme-color-game-pass--light);
+        }
     }
 }
 
