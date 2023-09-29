@@ -19,6 +19,7 @@
     --sections-side-padding: 2.5rem;
     --character-sections-vertical-spacing: 10rem;
     --section-heading-margin: 3.5rem;
+    --img-tilt: -2deg;
 }
 
 * {
@@ -106,7 +107,7 @@ p {
 }
 
 .tilted {
-    rotate: -2deg;
+    rotate: var(--img-tilt);
 }
 
 /* visually hide, only show for screen reader assistive tech */
@@ -392,6 +393,19 @@ p {
 
     & .img-container {
         grid-area: cover-img;
+    }
+
+    & .img-container-lower {
+        position: relative;
+        rotate: var(--img-tilt);
+
+        & .img-cross {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            
+            fill: var(--theme-color-yellow);
+        }
     }
 
     & img {
