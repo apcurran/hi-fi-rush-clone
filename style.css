@@ -19,7 +19,9 @@
     --sections-side-padding: 2.5rem;
     --character-sections-vertical-spacing: 10rem;
     --section-heading-margin: 3.5rem;
+
     --img-tilt: -2deg;
+    --drop-shadow--sm: 4px 4px 0 var(--theme-color-nearly-black);
 }
 
 * {
@@ -51,7 +53,7 @@ h2 {
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-    filter: drop-shadow(4px 4px 0 var(--theme-color-nearly-black));
+    filter: drop-shadow(var(--drop-shadow--sm));
     font-size: 3rem;
     color: var(--theme-color-white);
 }
@@ -403,8 +405,9 @@ p {
             position: absolute;
             inset: 0;
             margin: auto;
-            
+
             fill: var(--theme-color-yellow);
+            filter: drop-shadow(var(--drop-shadow--sm));
         }
     }
 
