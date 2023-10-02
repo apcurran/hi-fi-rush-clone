@@ -401,6 +401,12 @@ p {
         position: relative;
         rotate: var(--img-tilt);
 
+        & .card-popover {
+            border: none;
+            background: none;
+            box-shadow: none;
+        }
+
         & .img-cross {
             position: absolute;
             inset: 0;
