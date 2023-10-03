@@ -492,6 +492,22 @@ p {
             background-color: var(--theme-color-game-pass--light);
         }
     }
+
+    & .card-deluxe-popover {
+        border: 2px solid var(--theme-color-black);
+        padding: 0;
+    }
+    
+    & .card-deluxe-popover img {
+        max-inline-size: 60rem;
+        inline-size: 100%;
+        filter: none;
+        border: none;
+    }
+
+    & .card-deluxe-popover::backdrop {
+        background-color: rgb(0 0 0 / 80%);
+    }
 }
 
 /* Scroll Timeline Animation */
