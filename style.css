@@ -68,6 +68,30 @@ picture img {
     block-size: auto;
 }
 
+/* entry and exit animations */
+.popover,
+.popover::backdrop {
+    &:popover-open,
+    &:popover-open::backdrop {
+        /* BEFORE-OPEN state */
+        @starting-style {
+            opacity: 0;
+        }
+
+        /* OPEN state */
+        opacity: 1;
+    }
+
+    /* AFTER-OPEN-IS-CLOSED state */
+    opacity: 0;
+}
+
+.popover,
+.popover::backdrop {
+    /* transition animation props */
+    transition: opacity 500ms, display 500ms allow-discrete, overlay 500ms allow-discrete;
+}
+
 /* base button styling */
 button {
     cursor: pointer;
