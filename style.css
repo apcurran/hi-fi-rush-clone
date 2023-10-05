@@ -80,7 +80,7 @@ picture img {
 }
 
 .popover::backdrop {
-    animation: fade-in 500ms ease-in-out;
+    animation: fade-in 350ms ease-in-out;
 }
 
 .popover,
@@ -103,7 +103,7 @@ picture img {
 .popover,
 .popover::backdrop {
     /* transition animation props */
-    transition: opacity 500ms, display 500ms allow-discrete, overlay 500ms allow-discrete;
+    transition: opacity 350ms, display 350ms allow-discrete, overlay 350ms allow-discrete;
 }
 
 /* base button styling */
