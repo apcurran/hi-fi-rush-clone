@@ -264,6 +264,10 @@ p {
 .peppermint-section,
 .enemies-section {
     display: grid;
+
+    & p {
+        margin-block-end: 2rem;
+    }
 }
 
 .chai-section {
