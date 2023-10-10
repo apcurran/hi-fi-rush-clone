@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -65,9 +66,39 @@
                     <div class="text-group">
                         <h2>Feel the beat and fight back</h2>
                         <p>The whole world of Hi-Fi Rush moves to the beat, from Chai himself to the environment and even enemy attacks. Explore and fight with slick animated visuals that automatically match up to the beat. It doesn't just look cool - brawling to the beat amps up your combos too!</p>
-                        <button class="fancy-button button--yellow">
+                        <button class="fancy-button button--yellow" popovertarget="heroes-popover">
                             <span>Learn More</span>
                         </button>
+                        <div id="heroes-popover" class="popover character-popover" popover>
+                            <article class="popover-tab-content hero-tab-content is-active" id="hero-tab-chai">
+                                <h2>Chai</h2>
+                            </article>
+                            <article class="popover-tab-content hero-tab-content" id="hero-tab-peppermint">
+                                <h2>Peppermint</h2>
+                            </article>
+                            <article class="popover-tab-content hero-tab-content" id="hero-tab-macaron">
+                                <h2>Macaron</h2>
+                            </article>
+                            <article class="popover-tab-content hero-tab-content" id="hero-tab-cnmn">
+                                <h2>CNMN</h2>
+                            </article>
+                            <nav>
+                                <ul class="hero-tabs">
+                                    <li class="is-active">
+                                        <a href="#hero-tab-chai">Chai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#hero-tab-peppermint">Peppermint</a>
+                                    </li>
+                                    <li>
+                                        <a href="#hero-tab-macaron">Macaron</a>
+                                    </li>
+                                    <li>
+                                        <a href="#hero-tab-cnmn">CNMN</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                     <div class="img-group">
                         <picture>
