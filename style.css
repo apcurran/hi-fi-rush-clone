@@ -274,6 +274,7 @@ p {
     }
 }
 
+/* Heroes Gallery (start) */
 .character-popover {
     & .popover-tab-content {
         display: none;
@@ -284,11 +285,25 @@ p {
     }
 }
 
-/* Heroes Gallery */
 .hero-tabs {
     display: flex;
     gap: 1rem;
+
+    list-style-type: none;
+
+    & button {
+        padding: 0;
+        border: none;
+    }
 }
+
+.hero-tabs li.is-active {
+    & button {
+        outline: 4px solid var(--theme-color-yellow);
+    }
+}
+
+/* Heroes Gallery (end) */
 
 .chai-section {
     display: grid;
