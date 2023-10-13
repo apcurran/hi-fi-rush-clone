@@ -47,7 +47,8 @@ h3 {
     text-transform: uppercase;
 }
 
-h2 {
+h2,
+h3 {
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -276,12 +277,18 @@ p {
 
 /* Heroes Gallery (start) */
 .character-popover {
+    background-color: var(--theme-color-purple);
+
     & .popover-tab-content {
         display: none;
     }
 
     & .popover-tab-content.is-active {
         display: block;
+    }
+
+    .gallery-body {
+        color: #fff;
     }
 }
 
