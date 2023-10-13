@@ -284,6 +284,12 @@ p {
     }
 }
 
+/* Heroes Gallery */
+.hero-tabs {
+    display: flex;
+    gap: 1rem;
+}
+
 .chai-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
