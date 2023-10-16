@@ -277,7 +277,7 @@ p {
 
 /* Heroes Gallery (start) */
 .character-popover {
-    padding-block: 3rem;
+    padding-block: 2rem;
     padding-inline: 10rem;
 
     background-color: var(--theme-color-purple);
@@ -296,6 +296,11 @@ p {
 
     .gallery-picture {
         width: 35rem;
+        margin-block-end: 1.5rem;
+    }
+
+    & h3 {
+        margin-block-end: 1rem;
     }
 
     .gallery-body {
