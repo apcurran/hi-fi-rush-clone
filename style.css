@@ -277,7 +277,14 @@ p {
 
 /* Heroes Gallery (start) */
 .character-popover {
+    padding-block: 3rem;
+    padding-inline: 10rem;
+
     background-color: var(--theme-color-purple);
+
+    & h2 {
+        text-align: center;
+    }
 
     & .popover-tab-content {
         display: none;
@@ -287,20 +294,35 @@ p {
         display: block;
     }
 
+    .gallery-picture {
+        width: 35rem;
+    }
+
     .gallery-body {
         color: #fff;
+
+        & p {
+            width: 50ch;
+        }
     }
 }
 
 .hero-tabs {
-    display: flex;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
     gap: 1rem;
+    justify-content: center;
 
     list-style-type: none;
 
     & button {
         padding: 0;
         border: none;
+    }
+
+    & img {
+        width: 100%;
     }
 }
 
