@@ -16,14 +16,14 @@ function initTabs() {
         });
     }
 
-    // for (let villainTab of villainTabs) {
-    //     villainTab.addEventListener("click", (event) => {
-    //         event.preventDefault();
+    for (let villainTab of villainTabs) {
+        villainTab.addEventListener("click", (event) => {
+            event.preventDefault();
 
-    //         removeActiveTab(villainTabs, villainTabContentArticles);
-    //         addActiveTab(villainTab);
-    //     });
-    // }
+            removeActiveTab(villainTabs, villainTabContentArticles);
+            addActiveTab(villainTab);
+        });
+    }
 }
 
 initTabs();
