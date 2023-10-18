@@ -332,7 +332,8 @@ p {
     }
 }
 
-.hero-tabs li.is-active {
+.hero-tabs li.is-active,
+.enemy-tabs li.is-active {
     & button {
         outline: 4px solid var(--theme-color-yellow);
     }
