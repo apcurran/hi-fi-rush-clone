@@ -3,14 +3,30 @@
 const heroTabs = document.querySelectorAll(".hero-tabs li");
 const heroTabContentArticles = document.querySelectorAll(".hero-tab-content");
 
-for (let currentTab of heroTabs) {
-    currentTab.addEventListener("click", (event) => {
-        event.preventDefault();
+const villainTabs = document.querySelectorAll(".enemy-tabs li");
+const villainTabContentArticles = document.querySelectorAll(".enemy-tab-content");
 
-        removeActiveTab(heroTabs, heroTabContentArticles);
-        addActiveTab(currentTab);
-    });
+function initTabs() {
+    for (let heroTab of heroTabs) {
+        heroTab.addEventListener("click", (event) => {
+            event.preventDefault();
+    
+            removeActiveTab(heroTabs, heroTabContentArticles);
+            addActiveTab(heroTab);
+        });
+    }
+
+    // for (let villainTab of villainTabs) {
+    //     villainTab.addEventListener("click", (event) => {
+    //         event.preventDefault();
+
+    //         removeActiveTab(villainTabs, villainTabContentArticles);
+    //         addActiveTab(villainTab);
+    //     });
+    // }
 }
+
+initTabs();
 
 function removeActiveTab(tabs, tabArticles) {
     for (let tab of tabs) {
