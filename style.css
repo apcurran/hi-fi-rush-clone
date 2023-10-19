@@ -22,6 +22,8 @@
 
     --img-tilt: -2deg;
     --drop-shadow--sm: 4px 4px 0 var(--theme-color-nearly-black);
+
+    --header-fz-med: 2rem;
 }
 
 * {
@@ -301,6 +303,7 @@ p {
 
     & h3 {
         margin-block-end: 1rem;
+        font-size: var(--header-fz-med);
     }
 
     .gallery-body {
