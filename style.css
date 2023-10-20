@@ -277,10 +277,11 @@ p {
     }
 }
 
-/* Heroes Gallery (start) */
+/* Heroes/Villains Gallery (start) */
 .character-popover {
     padding-block: 2rem;
     padding-inline: 10rem;
+    max-height: 100%;
 
     background-color: var(--theme-color-purple);
 
@@ -342,7 +343,7 @@ p {
     }
 }
 
-/* Heroes Gallery (end) */
+/* Heroes/Villains Gallery (end) */
 
 .chai-section {
     display: grid;
