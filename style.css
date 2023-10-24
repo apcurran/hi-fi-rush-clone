@@ -653,3 +653,32 @@ p {
     animation: color-fade linear;
     animation-timeline: view();
 }
+
+/* Media Queries */
+@media screen and (width < 104em) {
+    .chai-section {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "text"
+            "img"
+            "video";
+        justify-items: center;
+
+        & .text-group {
+            z-index: 1;
+            margin-block-end: 4rem;
+        }
+
+        & .img-group {
+            grid-row: auto;
+        }
+    }
+
+    .peppermint-section,
+    .enemies-section {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "text"
+            "img";
+    }
+}
