@@ -683,10 +683,17 @@ p {
             "text"
             "img";
     }
+    
+    .peppermint-section,
+    .enemies-section {
+        & .popout--left,
+        & .popout--right {
+            margin-inline: 0;
+        }
 
-    .peppermint-section .popout--left,
-    .enemies-section .popout--right {
-        margin-inline: 0;
+        & .text-group {
+            margin-block-end: 2.5rem;
+        }
     }
 
     .news-section {
