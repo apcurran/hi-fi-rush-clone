@@ -688,4 +688,13 @@ p {
     .enemies-section .popout--right {
         margin-inline: 0;
     }
+
+    .news-section {
+        & .cards-container {
+            & .card-info {
+                padding: 1rem;
+                gap: 1.5rem;
+            }
+        }
+    }
 }
