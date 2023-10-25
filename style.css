@@ -165,7 +165,8 @@ p {
 }
 
 .page-wrapper {
-    max-width: 80rem;
+    width: min(80rem, 100%);
+    /* max-width: 80rem; */
     margin-inline: auto;
     background-color: #fff;
     box-shadow: 0 0 12px 20px hsl(0, 0%, 0%, .2);
@@ -671,6 +672,7 @@ p {
 
         & .img-group {
             grid-row: auto;
+            rotate: 0deg;
         }
     }
 
@@ -680,5 +682,10 @@ p {
         grid-template-areas:
             "text"
             "img";
+    }
+
+    .peppermint-section .popout--left,
+    .enemies-section .popout--right {
+        margin-inline: 0;
     }
 }
