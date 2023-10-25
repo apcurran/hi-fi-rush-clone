@@ -716,3 +716,16 @@ p {
         }
     }
 }
+
+@media screen and (width < 68em) {
+    .game-edition-card {
+        grid:
+            "cover-img" auto
+            "edition-content" auto;
+
+        & .img-container {
+            justify-self: center;
+            max-inline-size: 50%;
+        }
+    }
+}
