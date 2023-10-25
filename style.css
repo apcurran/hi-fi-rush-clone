@@ -657,6 +657,10 @@ p {
 
 /* Media Queries */
 @media screen and (width < 104em) {
+    .header-hero .logo {
+        width: 20rem;
+    }
+
     .chai-section {
         grid-template-columns: 1fr;
         grid-template-areas:
