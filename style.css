@@ -283,6 +283,7 @@ p {
     padding-block: 2rem;
     padding-inline: 10rem;
     max-height: 100%;
+    width: min(65rem, 100%);
 
     background-color: var(--theme-color-purple);
 
@@ -295,7 +296,8 @@ p {
     }
 
     & .popover-tab-content.is-active {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     & .gallery-picture {
