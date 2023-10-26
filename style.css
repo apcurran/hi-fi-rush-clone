@@ -745,5 +745,10 @@ p {
             grid-template-columns: 1fr;
             grid-template-areas: none;
         }
+
+        & .img-container-lower {
+            width: 75%;
+            justify-self: center;
+        }
     }
 }
