@@ -729,3 +729,21 @@ p {
         }
     }
 }
+
+@media screen and (width < 46em) {
+    .game-edition-card {
+        & .game-edition-content {
+            padding: 0;
+        }
+
+        & .button-mini-grid {
+            grid-template-columns: 1fr;
+            grid-template-areas: none;
+        }
+
+        & .buttons-grid {
+            grid-template-columns: 1fr;
+            grid-template-areas: none;
+        }
+    }
+}
