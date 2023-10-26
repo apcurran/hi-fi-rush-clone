@@ -298,8 +298,8 @@ p {
         display: block;
     }
 
-    .gallery-picture {
-        width: 35rem;
+    & .gallery-picture {
+        width: 100%;
         margin-block-end: 1.5rem;
     }
 
@@ -308,12 +308,12 @@ p {
         font-size: var(--header-fz-med);
     }
 
-    .gallery-body {
-        color: #fff;
+    & .gallery-container {
+        width: min(65ch, 100%);
+    }
 
-        & p {
-            width: 50ch;
-        }
+    & .gallery-body {
+        color: #fff;
     }
 }
 
@@ -720,6 +720,7 @@ p {
 @media screen and (width < 68em) {
     .character-popover {
         width: 100%;
+        padding-inline: 2rem;
     }
 
     .game-edition-card {
