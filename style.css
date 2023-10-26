@@ -718,6 +718,10 @@ p {
 }
 
 @media screen and (width < 68em) {
+    .character-popover {
+        width: 100%;
+    }
+
     .game-edition-card {
         grid:
             "cover-img" auto
