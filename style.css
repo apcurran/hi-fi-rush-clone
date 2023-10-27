@@ -744,6 +744,8 @@ p {
 
 @media screen and (width < 46em) {
     .game-edition-card {
+        margin-inline: 0;
+
         & .game-edition-content {
             padding: 0;
         }
