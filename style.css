@@ -737,7 +737,7 @@ p {
 
         & .img-container {
             justify-self: center;
-            max-inline-size: 50%;
+            max-inline-size: min(25rem, 100%);
         }
     }
 }
