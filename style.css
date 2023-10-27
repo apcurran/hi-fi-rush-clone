@@ -717,6 +717,11 @@ p {
             }
         }
     }
+
+    .game-edition-card .img-container-lower {
+        justify-self: center;
+        width: min(28rem, 100%);
+    }
 }
 
 @media screen and (width < 68em) {
@@ -751,11 +756,6 @@ p {
         & .buttons-grid {
             grid-template-columns: 1fr;
             grid-template-areas: none;
-        }
-
-        & .img-container-lower {
-            width: 75%;
-            justify-self: center;
         }
     }
 }
