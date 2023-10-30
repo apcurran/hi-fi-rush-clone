@@ -743,6 +743,17 @@ p {
 }
 
 @media screen and (width < 46em) {
+    .fancy-button {
+        font-size: 1rem;
+        padding-inline: 1.5rem;
+    }
+
+    .header-hero {
+        & .logo-group {
+            flex-direction: column;
+        }
+    } 
+
     .game-edition-card {
         margin-inline: 0;
 
