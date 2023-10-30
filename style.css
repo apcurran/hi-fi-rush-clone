@@ -754,10 +754,24 @@ p {
     }
 
     .header-hero {
+        padding-block-end: 5rem;
+
         & .logo-group {
             flex-direction: column;
         }
-    } 
+
+        & .logo {
+            width: 10rem;
+        }
+    }
+
+    .chai-section,
+    .peppermint-section,
+    .enemies-section {
+        padding-inline: 1.5rem;
+        padding-block-end: 7.5rem;
+        padding-block-start: 0;
+    }
 
     .game-edition-card {
         margin-inline: 0;
