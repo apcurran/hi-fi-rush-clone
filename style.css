@@ -704,7 +704,7 @@ p {
 
     .news-section {
         & .cards-container {
-            gap: 1rem;
+            gap: 2rem;
 
             & .card-info {
                 padding: 1rem;
