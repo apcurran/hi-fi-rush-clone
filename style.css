@@ -765,6 +765,16 @@ p {
         }
     }
 
+    .character-popover {
+        & h2 {
+            font-size: 2.75rem;
+        }
+
+        & h3 {
+            font-size: 1.5rem;
+        }
+    }
+
     .chai-section,
     .peppermint-section,
     .enemies-section {
