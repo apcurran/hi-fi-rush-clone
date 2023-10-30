@@ -743,6 +743,11 @@ p {
 }
 
 @media screen and (width < 46em) {
+    h2,
+    h3 {
+        font-size: 2rem;
+    }
+
     .fancy-button {
         font-size: 1rem;
         padding-inline: 1.5rem;
