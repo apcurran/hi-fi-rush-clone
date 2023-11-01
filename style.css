@@ -20,6 +20,8 @@
     --character-sections-vertical-spacing: 10rem;
     --section-heading-margin: 3.5rem;
 
+    --mobile-padding-inline-sm: 1rem;
+
     --img-tilt: -2deg;
     --drop-shadow--sm: 4px 4px 0 var(--theme-color-nearly-black);
 
@@ -799,5 +801,22 @@ p {
             grid-template-columns: 1fr;
             grid-template-areas: none;
         }
+    }
+}
+
+@media screen and (width < 25em) {
+    .chai-section,
+    .peppermint-section,
+    .enemies-section,
+    .game-edition-card {
+        padding-inline: var(--mobile-padding-inline-sm);
+    }
+
+    .news-section-wrapper {
+        max-inline-size: 92%;
+    }
+
+    .character-popover {
+        padding-inline: var(--mobile-padding-inline-sm);
     }
 }
