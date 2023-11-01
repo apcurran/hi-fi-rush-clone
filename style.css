@@ -18,7 +18,9 @@
 
     --sections-side-padding: 2.5rem;
     --character-sections-vertical-spacing: 10rem;
-    --section-heading-margin: 3.5rem;
+    --section-heading-margin--sm: 1rem;
+    --section-heading-margin--md: 1.5rem;
+    --section-heading-margin--lg: 3.5rem;
 
     --mobile-padding-inline-sm: 1rem;
 
@@ -259,7 +261,7 @@ p {
     padding-block-end: var(--character-sections-vertical-spacing);
 
     & h2 {
-        margin-block-end: 1.5rem;
+        margin-block-end: var(--section-heading-margin--md);
     }
 }
 
@@ -308,7 +310,7 @@ p {
     }
 
     & h3 {
-        margin-block-end: 1rem;
+        margin-block-end: var(--section-heading-margin--sm);
         font-size: var(--header-fz-med);
     }
 
@@ -437,7 +439,7 @@ p {
     padding-block: 6rem;
 
     & h2 {
-        margin-block-end: var(--section-heading-margin);
+        margin-block-end: var(--section-heading-margin--md);
         text-align: center;
     }
 
@@ -494,7 +496,7 @@ p {
 
     & .purchase-section-header {
         text-align: center;
-        margin-block-end: var(--section-heading-margin);
+        margin-block-end: var(--section-heading-margin--lg);
     }
 }
 
@@ -557,7 +559,7 @@ p {
     }
 
     & .game-edition-content h2 {
-        margin-block-end: 1rem;
+        margin-block-end: var(--section-heading-margin--sm);
     }
 
     & .game-edition-content ul,
