@@ -624,6 +624,23 @@ p {
         border: 2px solid var(--theme-color-black);
         padding: 0;
     }
+
+    & .popover-wrapper {
+        position: relative;
+
+        & button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            border: none;
+            box-shadow: none;
+            background-color: #fff;
+            font-size: 1.25rem;
+            padding-inline: .51rem;
+            padding-block: .25rem;
+        }
+    }
     
     & .card-deluxe-popover img {
         max-inline-size: 60rem;
