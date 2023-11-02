@@ -633,8 +633,6 @@ p {
             top: 0;
             right: 0;
             z-index: 1;
-            border: none;
-            box-shadow: none;
             background-color: #fff;
             font-size: 1.25rem;
             padding-inline: .51rem;
@@ -837,5 +835,9 @@ p {
 
     .character-popover {
         padding-inline: var(--mobile-padding-inline-sm);
+    }
+
+    .game-edition-card .popover-wrapper button {
+        font-size: .75rem;
     }
 }
