@@ -634,9 +634,10 @@ p {
             right: 0;
             z-index: 1;
             background-color: #fff;
-            font-size: 1.25rem;
-            padding-inline: .51rem;
-            padding-block: .25rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding-inline: .5em;
+            padding-block: .25em;
         }
     }
     
@@ -838,6 +839,6 @@ p {
     }
 
     .game-edition-card .popover-wrapper button {
-        font-size: .75rem;
+        font-size: .5rem;
     }
 }
