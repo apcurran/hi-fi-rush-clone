@@ -16,7 +16,7 @@
 
 - Demonstrates tabbed galleries with character info
 
-- Scroll driven animation of background-color with CSS Animations API
+- Scroll-driven animation of background-color with CSS Animations API
 
 - Uses native CSS nesting, grid, flexbox, and custom properties
 
