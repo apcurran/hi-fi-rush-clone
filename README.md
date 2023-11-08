@@ -20,6 +20,8 @@
 
 - Uses native CSS nesting, grid, flexbox, and custom properties
 
+- Native image lazy-loading
+
 - Responsive layout
 
 **Disclaimer -- All rights for Hi-Fi RUSH belong to Tango Gameworks & Bethesda Softworks. This is a clone website, with my own original code, for educational purposes only.**
