@@ -2,13 +2,7 @@
 
 [View live site](https://apcurran.github.io/hi-fi-rush-clone/)
 
-![Hi-Fi RUSH header](./images/readme/hfr_header.jpg)
-
-![Chai action pose/swing with guitar](./images/readme/hfr_chai-swing.jpg)
-
-![Hero gallery with tabs](./images/readme/hfr_hero-gallery.jpg)
-
-![Standard edition layout](./images/readme/hfr_standard-edition.jpg)
+## Features
 
 - Utilizes Popover API for hero, villain, and deluxe edition galleries
 
@@ -23,5 +17,13 @@
 - Native image lazy-loading
 
 - Responsive layout
+
+![Hi-Fi RUSH header](./images/readme/hfr_header.jpg)
+
+![Chai action pose/swing with guitar](./images/readme/hfr_chai-swing.jpg)
+
+![Hero gallery with tabs](./images/readme/hfr_hero-gallery.jpg)
+
+![Standard edition layout](./images/readme/hfr_standard-edition.jpg)
 
 **Disclaimer -- All rights for Hi-Fi RUSH belong to Tango Gameworks & Bethesda Softworks. This is a clone website, with my own original code, for educational purposes only.**
