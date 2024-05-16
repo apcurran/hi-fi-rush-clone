@@ -103,13 +103,13 @@ picture img {
         opacity: 1;
     }
 
-    /* AFTER-OPEN-IS-CLOSED state */
-    opacity: 0;
 }
 
 .popover,
 .popover::backdrop {
-    /* transition animation props */
+    /* AFTER-OPEN-IS-CLOSED state */
+    opacity: 0;
+    /* transition animation */
     transition: opacity 350ms, display 350ms allow-discrete, overlay 350ms allow-discrete;
 }
 
