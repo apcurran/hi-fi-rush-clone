@@ -36,7 +36,7 @@
 
 body,
 button {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -49,7 +49,7 @@ h1,
 h2,
 h3 {
     margin: 0;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: "Black Han Sans", sans-serif;
     text-transform: uppercase;
 }
 
@@ -102,7 +102,6 @@ picture img {
         /* OPEN state */
         opacity: 1;
     }
-
 }
 
 .popover,
@@ -110,7 +109,10 @@ picture img {
     /* AFTER-OPEN-IS-CLOSED state */
     opacity: 0;
     /* transition animation */
-    transition: opacity 350ms, display 350ms allow-discrete, overlay 350ms allow-discrete;
+    transition:
+        opacity 350ms,
+        display 350ms allow-discrete,
+        overlay 350ms allow-discrete;
 }
 
 /* base button styling */
@@ -173,7 +175,7 @@ p {
     /* max-width: 80rem; */
     margin-inline: auto;
     background-color: #fff;
-    box-shadow: 0 0 12px 20px hsl(0, 0%, 0%, .2);
+    box-shadow: 0 0 12px 20px hsl(0, 0%, 0%, 0.2);
 }
 
 .fancy-button {
@@ -186,7 +188,7 @@ p {
         display: block;
         transform: skewX(10deg);
         text-transform: uppercase;
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
     }
 }
 
@@ -202,8 +204,8 @@ p {
         grid-row: 1 / -1;
 
         & img {
-            -webkit-mask-image: linear-gradient(180deg,#000 90%,transparent);
-            mask-image: linear-gradient(180deg,#000 90%,transparent);
+            -webkit-mask-image: linear-gradient(180deg, #000 90%, transparent);
+            mask-image: linear-gradient(180deg, #000 90%, transparent);
         }
     }
 
@@ -215,7 +217,7 @@ p {
         padding-block-start: 1rem;
 
         & img {
-            filter: drop-shadow(8px 8px 0 rgba(0, 0, 0, .85));
+            filter: drop-shadow(8px 8px 0 rgba(0, 0, 0, 0.85));
         }
     }
 
@@ -246,7 +248,7 @@ p {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        opacity: .85;
+        opacity: 0.85;
 
         & svg {
             fill: var(--theme-color-blue);
@@ -389,8 +391,7 @@ p {
 
 .peppermint-section {
     grid-template-columns: 1.3fr 1fr;
-    grid-template-areas:
-        "img text";
+    grid-template-areas: "img text";
 
     color: var(--theme-color-white);
 
@@ -409,8 +410,7 @@ p {
 
 .enemies-section {
     grid-template-columns: 1fr 1.3fr;
-    grid-template-areas:
-        "text img";
+    grid-template-areas: "text img";
 
     color: var(--theme-color-white);
 
@@ -569,8 +569,7 @@ p {
 
     & .button-mini-grid {
         display: grid;
-        grid-template-areas:
-            "buy-button .";
+        grid-template-areas: "buy-button .";
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
         margin-block-end: 2rem;
@@ -599,7 +598,6 @@ p {
         &:nth-child(4) {
             grid-area: "epic";
         }
-
     }
 
     & .fancy-button {
@@ -628,7 +626,7 @@ p {
     & .popover-wrapper {
         position: relative;
     }
-    
+
     & .card-deluxe-popover img {
         max-inline-size: 60rem;
         inline-size: 100%;
@@ -649,8 +647,8 @@ p {
     background-color: #fff;
     text-transform: uppercase;
     font-size: 1rem;
-    padding-inline: .5em;
-    padding-block: .25em;
+    padding-inline: 0.5em;
+    padding-block: 0.25em;
 }
 
 /* Scroll Timeline Animation */
@@ -709,7 +707,7 @@ p {
             "text"
             "img";
     }
-    
+
     .peppermint-section,
     .enemies-section {
         & .popout--left,
@@ -839,6 +837,6 @@ p {
     }
 
     .popover-close-button {
-        font-size: .75rem;
+        font-size: 0.75rem;
     }
 }

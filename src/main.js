@@ -6,13 +6,14 @@ const heroTabs = document.querySelectorAll(".hero-tabs li");
 const heroTabContentArticles = document.querySelectorAll(".hero-tab-content");
 
 const villainTabs = document.querySelectorAll(".enemy-tabs li");
-const villainTabContentArticles = document.querySelectorAll(".enemy-tab-content");
+const villainTabContentArticles =
+    document.querySelectorAll(".enemy-tab-content");
 
 function initTabs() {
     for (let heroTab of heroTabs) {
         heroTab.addEventListener("click", (event) => {
             event.preventDefault();
-    
+
             removeActiveTab(heroTabs, heroTabContentArticles);
             addActiveTab(heroTab);
         });
