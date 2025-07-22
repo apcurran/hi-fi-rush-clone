@@ -1,5 +1,7 @@
 "use strict";
 
+import "./style.css";
+
 const heroTabs = document.querySelectorAll(".hero-tabs li");
 const heroTabContentArticles = document.querySelectorAll(".hero-tab-content");
 
