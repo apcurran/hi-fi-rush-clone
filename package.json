@@ -4,11 +4,15 @@
     "description": "Clone site for Hi-Fi Rush",
     "main": "index.js",
     "scripts": {
-        "lint": "npx eslint ."
+        "lint": "npx eslint .",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
     },
     "author": "Alex Curran",
     "license": "ISC",
     "devDependencies": {
-        "eslint": "^8.47.0"
+        "eslint": "^8.47.0",
+        "vite": "^7.0.5"
     }
 }
