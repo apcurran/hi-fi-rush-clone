@@ -42,7 +42,7 @@ button {
 body {
     margin: 0;
     padding: 0;
-    background-image: url("./images/HFR-bleed.webp");
+    background-image: url("/images/HFR-bleed.webp");
 }
 
 h1,
@@ -489,7 +489,7 @@ p {
 .purchase-section {
     padding-block: 5rem;
     background-color: var(--theme-color-cyan);
-    background-image: url("./images/purchase-bg.avif");
+    background-image: url("/images/purchase-bg.avif");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
