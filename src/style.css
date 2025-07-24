@@ -687,10 +687,7 @@ p {
         grid-template-areas:
             "text"
             "img";
-    }
 
-    .peppermint-section,
-    .enemies-section {
         & .popout--left,
         & .popout--right {
             margin-inline: 0;
