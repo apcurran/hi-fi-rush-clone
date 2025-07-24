@@ -6,7 +6,8 @@
     "scripts": {
         "lint:check": "npx oxlint .",
         "lint:fix": "npx oxlint --fix .",
-        "lint:css": "npx stylelint '**/*.css'",
+        "lint:css:check": "npx stylelint '**/*.css'",
+        "lint:css:fix": "npx stylelint '**/*.css' --fix",
         "format:check": "npx prettier . --check",
         "format:write": "npx prettier . --write",
         "dev": "vite",

@@ -15,18 +15,14 @@
     --theme-color-pc--light: #1ab6ff;
     --theme-color-nearly-black: rgb(0 0 0 / 90%);
     --theme-color-black: #000;
-
     --sections-side-padding: 2.5rem;
     --character-sections-vertical-spacing: 10rem;
     --section-heading-margin--sm: 1rem;
     --section-heading-margin--md: 1.5rem;
     --section-heading-margin--lg: 3.5rem;
-
     --mobile-padding-inline-sm: 1rem;
-
     --img-tilt: -2deg;
     --drop-shadow--sm: 4px 4px 0 var(--theme-color-nearly-black);
-
     --header-fz-med: 2rem;
 }
 
@@ -36,7 +32,7 @@
 
 body,
 button {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
 }
 
 body {
@@ -108,6 +104,7 @@ picture img {
 .popover::backdrop {
     /* AFTER-OPEN-IS-CLOSED state */
     opacity: 0;
+
     /* transition animation */
     transition:
         opacity 350ms,
@@ -160,7 +157,7 @@ p {
 }
 
 /* visually hide, only show for screen reader assistive tech */
-.screen-reader-only:not(:focus):not(:active) {
+.screen-reader-only:not(:focus, :active) {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     width: 1px;
@@ -172,10 +169,11 @@ p {
 
 .page-wrapper {
     width: min(80rem, 100%);
+
     /* max-width: 80rem; */
     margin-inline: auto;
     background-color: #fff;
-    box-shadow: 0 0 12px 20px hsl(0, 0%, 0%, 0.2);
+    box-shadow: 0 0 12px 20px hsl(0deg 0% 0% / 20%);
 }
 
 .fancy-button {
@@ -204,7 +202,7 @@ p {
         grid-row: 1 / -1;
 
         & img {
-            -webkit-mask-image: linear-gradient(180deg, #000 90%, transparent);
+            mask-image: linear-gradient(180deg, #000 90%, transparent);
             mask-image: linear-gradient(180deg, #000 90%, transparent);
         }
     }
@@ -217,15 +215,14 @@ p {
         padding-block-start: 1rem;
 
         & img {
-            filter: drop-shadow(8px 8px 0 rgba(0, 0, 0, 0.85));
+            filter: drop-shadow(8px 8px 0 rgb(0 0 0 / 85%));
         }
     }
 
     & .cta-group {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
-        align-self: self-end;
-        justify-self: center;
+        place-self: self-end center;
         padding-block-end: 1.5rem;
         z-index: 1;
 
@@ -243,7 +240,6 @@ p {
     & .arrow-container {
         background-color: var(--theme-color-yellow);
         aspect-ratio: 1 / 1;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -290,7 +286,6 @@ p {
     padding-inline: 10rem;
     height: min(60rem, 100%);
     width: min(65rem, 100%);
-
     background-color: var(--theme-color-purple);
 
     & h2 {
@@ -332,7 +327,6 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
     gap: 1rem;
     justify-content: center;
-
     list-style-type: none;
 
     & button {
@@ -392,7 +386,6 @@ p {
 .peppermint-section {
     grid-template-columns: 1.3fr 1fr;
     grid-template-areas: "img text";
-
     color: var(--theme-color-white);
 
     & .text-group {
@@ -411,7 +404,6 @@ p {
 .enemies-section {
     grid-template-columns: 1fr 1.3fr;
     grid-template-areas: "text img";
-
     color: var(--theme-color-white);
 
     & .text-group {
@@ -452,7 +444,6 @@ p {
         & article {
             display: grid;
             grid-template-rows: auto 1fr;
-
             border: 2px solid #000;
             background-color: var(--theme-color-gold);
             transition: transform 150ms ease-in-out;
@@ -465,7 +456,6 @@ p {
         & .card-info {
             padding-inline: 1.25rem;
             padding-block: 1.25rem;
-
             display: grid;
             align-content: space-between;
             gap: 3rem;
@@ -538,7 +528,6 @@ p {
             position: absolute;
             inset: 0;
             margin: auto;
-
             fill: var(--theme-color-yellow);
             filter: drop-shadow(var(--drop-shadow--sm));
         }
@@ -797,8 +786,7 @@ p {
     .peppermint-section,
     .enemies-section {
         padding-inline: 1.5rem;
-        padding-block-end: 7.5rem;
-        padding-block-start: 0;
+        padding-block: 0 7.5rem;
     }
 
     .game-edition-card {
