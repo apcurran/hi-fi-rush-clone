@@ -21,10 +21,10 @@ jobs:
               run: npm ci # fresh install with clean install
 
             - name: Run oxlint on code
-              run: npm run lint:fix
+              run: npm run lint:check
 
             - name: Run formatter
-              run: npm run format:write
+              run: npm run format:check
 
             - name: Build project with Vite
               run: npm run build

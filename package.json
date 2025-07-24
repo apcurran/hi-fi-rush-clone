@@ -4,7 +4,7 @@
     "description": "Clone site for Hi-Fi Rush",
     "main": "index.js",
     "scripts": {
-        "lint": "npx oxlint .",
+        "lint:check": "npx oxlint .",
         "lint:fix": "npx oxlint --fix .",
         "lint:css": "npx stylelint '**/*.css'",
         "format:check": "npx prettier . --check",
