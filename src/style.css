@@ -262,10 +262,6 @@ p {
     }
 }
 
-.peppermint-section {
-    padding-block-start: var(--character-sections-vertical-spacing);
-}
-
 .peppermint-section,
 .enemies-section {
     display: grid;
@@ -383,6 +379,7 @@ p {
 }
 
 .peppermint-section {
+    padding-block-start: var(--character-sections-vertical-spacing);
     grid-template-columns: 1.3fr 1fr;
     grid-template-areas: "img text";
     color: var(--theme-color-white);
