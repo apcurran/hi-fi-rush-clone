@@ -96,10 +96,7 @@ picture img {
         opacity 350ms,
         display 350ms allow-discrete,
         overlay 350ms allow-discrete;
-}
 
-.popover,
-.popover::backdrop {
     &:popover-open,
     &:popover-open::backdrop {
         /* BEFORE-OPEN state */
