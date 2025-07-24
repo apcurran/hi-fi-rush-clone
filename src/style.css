@@ -203,7 +203,6 @@ p {
 
         & img {
             mask-image: linear-gradient(180deg, #000 90%, transparent);
-            mask-image: linear-gradient(180deg, #000 90%, transparent);
         }
     }
 
