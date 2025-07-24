@@ -572,19 +572,19 @@ p {
         gap: 1.5rem 3rem;
 
         &:nth-child(1) {
-            grid-area: "xbox";
+            grid-area: xbox;
         }
 
         &:nth-child(2) {
-            grid-area: "windows";
+            grid-area: windows;
         }
 
         &:nth-child(3) {
-            grid-area: "steam";
+            grid-area: steam;
         }
 
         &:nth-child(4) {
-            grid-area: "epic";
+            grid-area: epic;
         }
     }
 
