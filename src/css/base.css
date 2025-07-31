@@ -1,0 +1,85 @@
+:root {
+    --theme-color-white: #fff;
+    --theme-color-blue: #004aba;
+    --theme-color-red: red;
+    --theme-color-purple: #6b36bc;
+    --theme-color-cyan: #00edfd;
+    --theme-color-magenta: #fe0075;
+    --theme-color-yellow: #ff0;
+    --theme-color-salmon: #ff316b;
+    --theme-color-gold: #fc4;
+    --theme-color-orange: #ff2500;
+    --theme-color-game-pass: #0e7a0d;
+    --theme-color-game-pass--light: #13a111;
+    --theme-color-pc: #00a2ed;
+    --theme-color-pc--light: #1ab6ff;
+    --theme-color-nearly-black: rgb(0 0 0 / 90%);
+    --theme-color-black: #000;
+    --sections-side-padding: 2.5rem;
+    --character-sections-vertical-spacing: 10rem;
+    --section-heading-margin--sm: 1rem;
+    --section-heading-margin--md: 1.5rem;
+    --section-heading-margin--lg: 3.5rem;
+    --mobile-padding-inline-sm: 1rem;
+    --img-tilt: -2deg;
+    --drop-shadow--sm: 4px 4px 0 var(--theme-color-nearly-black);
+    --header-fz-med: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/HFR-bleed.webp");
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: "Black Han Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+h2,
+h3 {
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    filter: drop-shadow(var(--drop-shadow--sm));
+    font-size: 3rem;
+    color: var(--theme-color-white);
+}
+
+img,
+picture {
+    display: block;
+}
+
+picture img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.125rem;
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    font-weight: 700;
+}
