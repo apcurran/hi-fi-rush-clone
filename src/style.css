@@ -1,3 +1,9 @@
+@layer base, components, utilities;
+
+@import url("./css/base.css") layer(base);
+@import url("./css/components.css") layer(components);
+@import url("./css/utilities.css") layer(utilities);
+
 :root {
     --theme-color-white: #fff;
     --theme-color-blue: #004aba;
