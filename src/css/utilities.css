@@ -1,0 +1,14 @@
+/* visually hide, only show for screen reader assistive tech */
+.screen-reader-only:not(:focus, :active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.tilted {
+    rotate: var(--img-tilt);
+}
